@@ -1,0 +1,15 @@
+$mobile-width: 768px;
+$desktop-width: 1366px;
+
+@media (max-width: $mobile-width) {
+  .nav-list {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+
+    .list-item {
+      font-size: 20px;
+    }
+  }
+}
