@@ -1,8 +1,7 @@
-import "../../../assets/scss/components/Desktop.scss";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Cart from "../../../assets/images/icons8-basket-96.png";
-import "../../../assets/scss/components/Desktop.scss";
+import "./Desktop.scss";
 
 const Desktop: React.FC = () => {
   return (

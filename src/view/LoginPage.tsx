@@ -1,5 +1,6 @@
 import "../assets/scss/LoginPage.scss";
 import { motion } from "framer-motion";
+import InputFields from "../components/InputFields/InputFields";
 import React from "react";
 
 const LoginPage: React.FC = () => {
@@ -9,7 +10,9 @@ const LoginPage: React.FC = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.2 }}
     >
-      <h1>Login</h1>
+      <div className="input-container">
+        <InputFields group="login" />
+      </div>
     </motion.div>
   );
 };
