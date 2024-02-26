@@ -8,6 +8,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <Router>
+        <div className="background-container"></div>
         <NavBar />
         <Routing />
       </Router>

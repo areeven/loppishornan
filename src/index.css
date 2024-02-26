@@ -3,6 +3,7 @@
 body {
   margin: 0;
   padding: 0;
+  background: #e8e0d9;
   font-family: "Rajdhani", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,6 +11,11 @@ body {
   font-weight: 800;
   font-style: normal;
   text-align: center;
+
+  @media (min-width: 768px) {
+    background: url("./assets/images/antique_background.png");
+    background-size: cover;
+  }
 }
 
 code {
