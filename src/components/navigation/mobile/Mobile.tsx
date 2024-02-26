@@ -2,13 +2,13 @@ import "../../../assets/scss/components/Mobile.scss";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Cart from "../../../assets/images/icons8-basket-96.png";
-
 import "../../../assets/scss/components/Mobile.scss";
 
 const Mobile: React.FC = () => {
   return (
     <>
       <ul className="nav-list">
+        <li>Loppishörnan</li>
         <NavLink className="list-item" to="/">
           Hem
         </NavLink>

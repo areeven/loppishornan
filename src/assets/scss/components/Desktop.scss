@@ -1,0 +1,16 @@
+@import "./NavBar.scss";
+
+@media (min-width: $mobile-width) {
+  .nav-list {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-list .list-item {
+    margin: 0 5px;
+    height: 100%;
+    font-size: 24px;
+    width: 80px;
+  }
+}

@@ -1,15 +1,23 @@
-$mobile-width: 768px;
-$desktop-width: 1366px;
+@import "./NavBar.scss";
 
 @media (max-width: $mobile-width) {
   .nav-list {
-    position: fixed;
-    bottom: 0;
+    display: none;
+    /* margin: 0 auto;
+    position: absolute;
     right: 0;
+    bottom: 0;
     width: 100%;
+    height: 300px;
+    flex-direction: column;
 
-    .list-item {
-      font-size: 20px;
-    }
+     */
   }
+
+  /* .nav-list .list-item {
+    margin: 8px auto;
+    height: auto;
+    font-size: 20px;
+    width: 80%;
+  } */
 }
