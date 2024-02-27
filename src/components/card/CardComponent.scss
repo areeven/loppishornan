@@ -5,9 +5,9 @@
   overflow-x: hidden;
 
   @media (min-width: 768px) {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    margin: 10px;
     padding: 10px;
     gap: 15px;
   }
@@ -40,8 +40,10 @@
   flex-direction: column;
   transform: translate(-50%, -50%) scale(1);
   transition: all 1s ease;
-  opacity: 1; /* Initially visible */
-  pointer-events: auto; /* Enable pointer events initially */
+  opacity: 1;
+  /* Initially visible */
+  pointer-events: auto;
+  /* Enable pointer events initially */
 
   @media (min-width: 768px) {
     width: 400px;
@@ -52,7 +54,8 @@
 .closed-window {
   opacity: 0;
   pointer-events: none;
-  transform: translate(-50%, -50%) scale(0.5); /* Adjust scale as needed */
+  transform: translate(-50%, -50%) scale(0.5);
+  /* Adjust scale as needed */
   transition: all 1s ease;
 }
 

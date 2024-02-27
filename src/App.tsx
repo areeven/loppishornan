@@ -10,7 +10,9 @@ const App: React.FC = () => {
       <Router>
         <div className="background-container"></div>
         <NavBar />
-        <Routing />
+        <div className="view-wrapper">
+          <Routing />
+        </div>
       </Router>
     </div>
   );
