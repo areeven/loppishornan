@@ -2,15 +2,22 @@
 
 @media (min-width: $mobile-width) {
   .nav-list {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     font-size: 24px;
+    gap: 10px;
   }
 
   .nav-list .list-item {
     margin: 0 5px;
     height: 100%;
-    width: 80px;
+    width: 100px;
+
+    &:nth-child(1) {
+      width: 250px;
+      color: $primary-color;
+    }
   }
 }
