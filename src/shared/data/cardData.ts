@@ -10,7 +10,7 @@ export const cardData = [
     defaultValue: "",
     image: Chair,
     price: "300sek",
-    description: "",
+    details: "Antik stol från 1800-talet. I fint skick.",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const cardData = [
     defaultValue: "",
     image: Table,
     price: "800sek",
-    description: "",
+    details: "Bord med två stolar, aningen slitet skick.",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const cardData = [
     label: "Böcker",
     defaultValue: "",
     image: Books,
-    price: "50sek / each",
-    description: "",
+    price: "50sek / styck",
+    details: "Gamla böcker, säljes styckvis.",
   },
 ];

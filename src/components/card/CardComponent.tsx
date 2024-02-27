@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import "./CardComponent.scss";
+import { MdClose } from "react-icons/md";
 import { cardData } from "../../shared/data/cardData";
+import "./CardComponent.scss";
 
 interface CardProps {
   group: string;
@@ -19,10 +20,9 @@ const CardComponent: React.FC<CardProps> = ({ group }) => {
         {cardData
           .filter((data) => data.group === group)
           .map((data) => (
-            <div key={data.label}>
+            <div className="card-box" onClick={handleOpen} key={data.label}>
               <p>{data.label}</p>
               <img
-                onClick={handleOpen}
                 className="shop-image"
                 src={data.image}
                 alt={data.label}
@@ -32,9 +32,13 @@ const CardComponent: React.FC<CardProps> = ({ group }) => {
             </div>
           ))}
         <div
-          className={!open ? "open-window" : "closed-window"}
+          className={open ? "open-window" : "closed-window"}
           onClick={handleOpen}
-        ></div>
+        >
+          <div className="close-button" onClick={handleOpen}>
+            <MdClose />
+          </div>
+        </div>
       </div>
     </motion.div>
   );
