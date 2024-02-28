@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2 }}
         >
-          <h1>Home</h1>
+          <h1 className="text-pink-700">Home</h1>
         </motion.div>
       </div>
     </>
